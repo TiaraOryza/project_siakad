@@ -83,6 +83,7 @@ class GuruController extends Controller
             'tgl_lahir' => $request->tgl_lahir,
             'foto' => $nameFoto
         ]);
+    
 
         Nilai::create([
             'guru_id' => $guru->id

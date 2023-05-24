@@ -1,6 +1,6 @@
 <footer class="main-footer">
         <marquee>
-            <strong>Copyright &copy; <script>document.write(new Date().getFullYear());</script> &diams; <a href="http://smkn1jenpo.sch.id/">SMK Negeri 1 Jenangan Ponorogo</a>. </strong>
+            <strong><script>document.write(new Date().getFullYear());</script> &diams; <a href="">SMA NEGERI 1 GARUM</a> </strong>
         </marquee>
     </footer>
 
