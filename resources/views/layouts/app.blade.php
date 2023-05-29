@@ -11,10 +11,10 @@
   <link rel="stylesheet" href="{{ asset('dist/css/adminlte.min.css') }}">
   <link rel="shrotcut icon" href="{{ asset('img/favicon.ico') }}">
 </head>
-<body class="hold-transition login-page" style="background-image: url('{{ asset("img/BG.jpg") }}'); background-size: cover; background-attachment: fixed;">
+<body class="hold-transition login-page" style="background-image: url('{{ asset("img/background.png") }}'); background-size: cover; background-attachment: fixed;">
   <div class="login-box">
     <div class="login-logo">
-      <img src="{{ asset('img/') }}" width="100%" alt="">
+      <img src="{{ asset('img/logoputih.png') }}" width="100%" alt="">
     </div>
 
     <div class="login-logo" style="color: white;">
