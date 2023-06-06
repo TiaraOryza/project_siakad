@@ -1,5 +1,5 @@
 @extends('template_backend.home')
-@section('heading', 'Dashboard')
+@section('heading', 'Dashboard Admin')
 @section('page')
   <li class="breadcrumb-item active">Admin</li>
   <li class="breadcrumb-item active">Dashboard</li>
@@ -139,12 +139,12 @@
             </div>
         </div>
     </div>
-    <div class="col-lg-12">
+    <!-- <div class="col-lg-12">
         <div class="card">
             <div class="card-body">
                 <div class="d-flex">
                     <p class="d-flex flex-column">
-                        <span class="text-bold text-lg">Kelas / Paket Keahlian </span>
+                        <span class="text-bold text-lg">Jurusan</span>
                     </p>
                     <p class="ml-auto d-flex flex-column text-right">
                         <span class="text-success">
@@ -159,23 +159,17 @@
                                 <canvas id="pieChartPaket" height="150"></canvas>
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <!-- <div class="col-md-4">
                             <ul class="chart-legend clearfix">
-                                <li><i class="far fa-circle" style="color: #d4c148"></i> Bisnis kontruksi dan Properti</li>
-                                <li><i class="far fa-circle" style="color: #ba6906"></i> Desain Permodelan dan Informasi Bangunan</li>
-                                <li><i class="far fa-circle" style="color: #ff990a"></i> Elektronika Industri</li>
-                                <li><i class="far fa-circle" style="color: #00a352"></i> Otomasi Industri</li>
-                                <li><i class="far fa-circle" style="color: #2cabe6"></i> Teknik dan Bisnis Sepeda Motor</li>
-                                <li><i class="far fa-circle" style="color: #999999"></i> Rekayasa Perangkat Lunak</li>
-                                <li><i class="far fa-circle" style="color: #0b2e75"></i> Teknik Pemesinan</li>
-                                <li><i class="far fa-circle" style="color: #7980f7"></i> Teknik Pengelasan</li>
+                                <li><i class="far fa-circle" style="color: #0b2e75"></i> Ilmu Pengetahuan Alam</li>
+                                <li><i class="far fa-circle" style="color: #7980f7"></i> Ilmu Pengetahuan Sosial</li>
                             </ul>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 @endsection
 @section('script')
     <script type="text/javascript">
@@ -231,35 +225,29 @@
             })
 
             
-            var pieChartCanvasPaket = $('#pieChartPaket').get(0).getContext('2d')
-            var pieDataPaket        = {
-                labels: [
-                    'Bisnis kontruksi dan Properti',
-                    'Desain Permodelan dan Informasi Bangunan',
-                    'Elektronika Industri',
-                    'Otomasi Industri',
-                    'Teknik dan Bisnis Sepeda Motor',
-                    'Rekayasa Perangkat Lunak',
-                    'Teknik Pemesinan',
-                    'Teknik Pengelasan',
-                ],
-                datasets: [
-                    {
-                    data: [{{ $bkp }}, {{ $dpib }}, {{ $ei }}, {{ $oi }}, {{ $tbsm }}, {{ $rpl }}, {{ $tpm }}, {{ $las }}],
-                    backgroundColor : ['#d4c148', '#ba6906', '#ff990a', '#00a352', '#2cabe6', '#999999', '#0b2e75', '#7980f7'],
-                    }
-                ]
-            }
-            var pieOptions     = {
-                legend: {
-                    display: false
-                }
-            }
-            var pieChart = new Chart(pieChartCanvasPaket, {
-                type: 'doughnut',
-                data: pieDataPaket,
-                options: pieOptions      
-            })
+        //     var pieChartCanvasPaket = $('#pieChartPaket').get(0).getContext('2d')
+        //     var pieDataPaket        = {
+        //         labels: [
+        //             'Ilmu Pengetahuan Sosial',
+        //             'Ilmu Pengetahuan Alam',
+        //         ],
+        //         datasets: [
+        //             {
+        //             data: [{{ $bkp }}, {{ $dpib }}, {{ $ei }}, {{ $oi }}, {{ $tbsm }}, {{ $rpl }}, {{ $tpm }}, {{ $las }}],
+        //             backgroundColor : ['#d4c148', '#ba6906', '#ff990a', '#00a352', '#2cabe6', '#999999', '#0b2e75', '#7980f7'],
+        //             }
+        //         ]
+        //     }
+        //     var pieOptions     = {
+        //         legend: {
+        //             display: false
+        //         }
+        //     }
+        //     var pieChart = new Chart(pieChartCanvasPaket, {
+        //         type: 'doughnut',
+        //         data: pieDataPaket,
+        //         options: pieOptions      
+        //     })
         })
         
         $("#Dashboard").addClass("active");

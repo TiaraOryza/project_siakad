@@ -65,7 +65,7 @@
               @method('delete')
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Sure you drop all data?</h5>
+                  <h5 class="modal-title" id="exampleModalLabel">Yakin Untuk Menghapus Semua Data?</h5>
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Cencel</button>

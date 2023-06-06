@@ -34,7 +34,7 @@
                   <td>
                       <h5 class="card-title">{{ $data->mapel->nama_mapel }}</h5>
                       <p class="card-text"><small class="text-muted">{{ $data->nama_guru }}</small></p>
-                  </td>
+                  </td> 
                   @if ($data->dsk($data->id))
                     <td>{{ $data->dsk($data->id)->kkm }}</td>
                     <td>{{ $data->dsk($data->id)->deskripsi_a }}</td>
@@ -47,7 +47,8 @@
                     <td></td>
                     <td></td>
                     <td></td>
-                  @endif
+                    @endif
+                    
                 </tr>
               @endforeach
             </tbody>

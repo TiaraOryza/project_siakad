@@ -2,8 +2,8 @@
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a href="" class="brand-link" style="">
-        <img src="{{ asset('img/favicon.png') }}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3">
-        <span class="brand-text font-weight-light">SIAKAD</span>
+        <img src="{{ asset('img/logo.png') }}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3">
+        <span class="brand-text font-weight-light">SISFOGA</span>
     </a>
 
     <!-- Sidebar -->
@@ -87,7 +87,7 @@
                             <a href="#" class="nav-link" id="ViewTrash">
                                 <i class="nav-icon fas fa-recycle"></i>
                                 <p>
-                                    View Trash
+                                    Recycle Bin
                                     <i class="fas fa-angle-left right"></i>
                                 </p>
                             </a>

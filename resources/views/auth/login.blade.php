@@ -1,8 +1,8 @@
 @extends('layouts.app')
-@section('page', 'Login Authentication')
+@section('page', 'Silahkan Login')
 @section('content')
 <div class="card-body login-card-body">
-  <p class="login-box-msg">Sign in to start your session</p>
+  <p class="login-box-msg">Masuk untuk dapat mengakses sistem</p>
 
   <form action="{{ route('login') }}" method="post">
     @csrf

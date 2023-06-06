@@ -16,5 +16,10 @@ class Guru extends Model
         return $this->belongsTo('App\Mapel')->withDefault();
     }
 
+    public function dsk()
+    {
+        return $this->belongsTo('App\Nilai')->withDefault();
+    }
+
     protected $table = 'guru';
 }
